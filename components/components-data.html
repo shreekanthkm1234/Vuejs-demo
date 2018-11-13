@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<div class="container">
+
+<div id="app">
+
+<posts :data="34">
+	
+</posts>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+Vue.component('posts',{
+
+	props:['data'],
+
+	template:`
+
+	<h1 @click="display">{{ data }}</h1>
+
+	`,
+
+
+	data(){
+		return{
+			message:'Hello shree'
+
+		}
+	},
+	methods:{
+		display(){
+		console.log('shreekanth');
+		}
+	}	
+});
+
+
+let vm = new Vue({
+	el : '#app',
+	
+})
+	
+
+</script>
+
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<div class="container">
+
+<div id="app">
+
+<posts>
+	
+</posts>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+Vue.component('posts',{
+
+	template:`
+
+	<h1 @click="display">{{ message }}</h1>
+
+	`,
+
+
+	data(){
+		return{
+			message:'Hello shree'
+
+		}
+	},
+	methods:{
+		display(){
+		console.log('shreekanth');
+		}
+	}	
+});
+
+
+let vm = new Vue({
+	el : '#app',
+	
+})
+	
+
+</script>
+
+</body>
+</html> -->

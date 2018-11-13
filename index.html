@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<div id="app">
+
+<h1>{{ message }}</h1>
+<h2>{{ number + 10 }}</h2>
+<h3>{{ shreekanth ? 'shreekanth' : 'keerthan' }}</h3>
+<h1>{{ message.split('').reverse('').join('') }}</h1>
+	
+	
+</div>
+
+
+
+
+<script>
+
+let vm = new Vue({
+	el : '#app',
+	data : {
+		message : 'Hello Word',
+		number : 10,
+		shreekanth: true
+	}
+})
+	
+
+</script>

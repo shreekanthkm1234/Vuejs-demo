@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<div class="container">
+
+<div id="app">
+<ul>
+<li v-for="post in posts" :key="post.id">{{post.title}}</li>
+</ul>
+
+</div>
+</div>
+
+
+
+<script>
+
+let vm = new Vue({
+	el : '#app',
+	data : {
+
+		posts:[
+		{id:1 ,title:'Shreekanth KM' ,body:'ATConline employe'},
+		{id:2 ,title:'Keerthan DN' ,body:'ATConline employe'},
+		{id:3 ,title:'Rakshith suvarna' ,body:'ATConline employe'},
+		{id:4 ,title:'Amith Shetty' ,body:'ATConline employe'},
+		{id:5 ,title:'Savin LOBO' ,body:'ATConline employe'},
+		]
+		
+		
+	}
+})
+	
+
+</script>
+
+</body>
+</html>
